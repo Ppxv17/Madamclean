@@ -19,8 +19,11 @@
   <link rel="stylesheet" href="css/custom.css">
   <style type="text/css">
   body {
-	margin-right: 0px;
-}
+	  margin-right: 0px;
+  }
+  .dropdown-menu {
+    background-color: #F08080; /* LightCora */
+  }
   </style>
   <title>MadamClean</title>
 </head>
@@ -38,13 +41,9 @@
       <ul class="navbar-nav ml-auto pl-5 custom-nav">
         <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#Services" class="nav-link">บริการ</a></li>
+        <li class="nav-item"><a href="booking" class="nav-link">จองแม่บ้าน</a></li>
         <ul class="nav">    
-    	<li class="nav-item dropdown">
-       <style>
-    	.dropdown-menu {
-        background-color: #F08080; /* LightCora */
-    		}
-		</style>
+    	    <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
         <div class="dropdown-menu">
             <a class="dropdown-item" href="#registration">เข้าสู่ระบบ</a>

@@ -1,14 +1,12 @@
 <?php
 define('TITLE', 'Dashboard');
 define('PAGE', 'dashboard');
+session_start();
 include('includes/header.php');
 include('../dbConnection.php');
-session_start();
- if(isset($_SESSION['is_adminlogin'])){
-  $aEmail = $_SESSION['aEmail'];
- } else {
-  echo "<script> location.href='login.php'; </script>";
- }
+include('checklogin.php');
+
+
  $sql = "SELECT max(request_id) FROM submitrequest_tb_new";
  $result = $conn->query($sql);
  $row = mysqli_fetch_row($result);
