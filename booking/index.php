@@ -60,11 +60,16 @@
         <div class="col-12 my-5 pb-2"></div>
         <div class="col-12 col-lg-3 col-sm-6 mt-5 mx-5">
            <h4>จองแบบครั้งเดียว</h4>      
-           <div class="row">
-            <div class="col-12">
+           <div class="row  mt-2">
+            <div class="col-2 text-right" style="border-right:solid 4px #ccc;">
+                1
+            </div>
+            <div class="col-10">
                 <div class="form-group">
                     <label for="">สถานที่</label>
-                    <input type="text" class="form-cotrol">
+                    <input type="text" class="form-cotrol" placeholder="กรุณาเลือกสถานที่่">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4941.5981406307465!2d100.57284546007996!3d13.860237106779552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29cd73f1a8eeb%3A0xf45fb9068d605131!2sDailyNews%20Newspaper!5e0!3m2!1sen!2sth!4v1706806173452!5m2!1sen!2sth" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
                 <div class="form-group">
                     <label for="">อุแกรณ์</label>
@@ -75,7 +80,6 @@
                 </div>
             </div>
            </div>      
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4941.5981406307465!2d100.57284546007996!3d13.860237106779552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29cd73f1a8eeb%3A0xf45fb9068d605131!2sDailyNews%20Newspaper!5e0!3m2!1sen!2sth!4v1706806173452!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div> <!-- End Customer 3rd Column-->
     </div>
 </div>

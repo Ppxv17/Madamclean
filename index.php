@@ -46,8 +46,8 @@
     	    <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#registration">เข้าสู่ระบบ</a>
-            <a class="dropdown-item" href="#registration">ลงทะเบียน</a>
+            <a class="dropdown-item" href="" data-toggle="modal" data-target="#exampleModal">เข้าสู่ระบบ</a>
+            <a class="dropdown-item" href="" data-toggle="modal" data-target="#exampleModal">ลงทะเบียน</a>
             <!-- Add more dropdown items as needed -->
         </div>
     	</li>
@@ -211,11 +211,51 @@
     </div>
   </div> <!-- End Services -->
 
-  <!-- Start Registration  -->
-  <?php include('userRegistration.php') ?>
+
+
   <!-- End Registration  -->
   
-  
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form action="" class="shadow-lg p-4" method="POST">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ลงทะเบียน</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+            <div class="form-group">
+              <i class="fas fa-user"></i><label for="name" class="pl-2 font-weight-bold">Name</label><input type="text"
+                class="form-control" placeholder="Name" name="rName">
+            </div>
+            <div class="form-group">
+              <i class="fas fa-user"></i><label for="email" class="pl-2 font-weight-bold">Email</label><input type="email"
+                class="form-control" placeholder="Email" name="rEmail">
+              <!--Add text-white below if want text color white-->
+              <small class="form-text"></small>
+            </div>
+            <div class="form-group">
+              <i class="fas fa-key"></i><label for="pass" class="pl-2 font-weight-bold">
+                Password</label><input type="password" class="form-control" placeholder="Password" name="rPassword">
+            </div>
+          
+            <em style="font-size:10px;">
+            </em>
+            <?php if(isset($regmsg)) {echo $regmsg; } ?>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
+          <button class="btn btn-danger" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
   
 
   <!-- Start Happy Customer  -->
@@ -332,6 +372,11 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/all.min.js"></script>
+  <script>
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+  </script>
 </body>
 
 </html>
